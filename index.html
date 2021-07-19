@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Cleaners</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d90b6b79d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <!-- Navbar -->
+   <div class="navbar">
+       <div class="container flex">
+           <h1 class="logo">Pro Cleaners</h1>
+           <nav>
+             <a href="#" class="phoneNumber">Phone:1-800-222-3030</a>
+           </nav>
+       </div>
+   </div>
+   <!-- Banner -->
+   <section class="banner">
+       <div class="container grid">
+           <div class="banner-text">
+               <h1>Vancouver's Best <br>Home Cleaners</h1>
+               <p>ProCleaning is Vancouver's best cleaning service. For the quality maid service Vancouver relies on, book one of our experienced, background professionals to have your home clean in no time</p>
+           </div>
+           <div class="banner-form card">
+               <h2>Request Info & Booking</h2>
+               <form name="bookingForm" action="#" method="POST" data-netlify="true" onsubmit="return validate();">
+                   <div class="bookingForm-control">
+                       <input type="text" name="name" placeholder="Your Name" id="fullName" required>
+                   </div>
+                   <div class="bookingForm-control">
+                       <input type="email" name="email" placeholder="Your Email" id="email" required>
+                   </div>
+                   <div class="bookingForm-control">
+                       <input type="number" name="phone" placeholder="Your Phone" id="phoneNumber" required>
+                   </div>
+                   <input type="submit" value="Request Info & Booking" class="btn btn-primary">
+               </form>
+           </div>
+       </div>
+    </section>
+<!-- Stats -->
+    <section class="stats">
+        <div class="container">
+           <div class="grid grid-3 text-center">
+               <div class="avatar-icon">
+                  <i class="fas fa-user fa-3x"></i>
+                  <h3>Trusted Professionals</h3>
+                  <p>Our Professionals are experienced, friendly and background-checked</p>
+               </div>
+               <div>
+                   <i class="far fa-calendar-alt fa-3x"></i>
+                   <h3>Available Everyday</h3>
+                   <p>We're available to serve you 7days per week. We'll work around your schedule</p>
+                </div>
+                <div class="dollar-icon">
+                    <i class="fas fa-dollar-sign fa-3x"></i>
+                    <h3>100% Money Back Guarantee</h3>
+                    <p>If you're not satisfied, we'll refund all of your money. It's a simple a that.</p>
+                </div>
+           </div>
+        </div>
+    </section>
+<!-- Reviews -->
+    <section class="wrapper">
+   
+        <h2 class="text-center">What our Clients Say</h2>
+        <div class="review">
+            <div class="client">
+                <div class="client-img">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/03/15/man-1867009_960_720.jpg" alt="client_image">
+                </div>
+                  <p>Albert Dinero</p><hr>
+                  <p><em>The team was fast and friendly-honestly my house hasn't been this clean in years!</em></p>
+
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+                <i class="fas fa-star star"></i>
+            </div>
+                
+                <div class="client">
+                    <div class="client-img">
+                        <img src="https://cdn.pixabay.com/photo/2015/06/25/16/55/fashion-821506_960_720.jpg" alt="client_image">
+                    </div>
+                    <p>Diana Banks</p><hr>
+                    <p><em>It feels so great walking in to a fresh, clean apartment everyday. These guys make my place spotless!</em></p>
+                    
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                                
+        </div>
+
+    </section>
+   <section>
+       <div class="footer">
+           <footer>
+               <p>&#169Copyright. Alright Reserved</p>
+           </footer>
+
+       </div>
+   </section>
+    <script>
+        function validate() {
+    var input_text = document.getElementById("fullName");
+    var input_email = document.getElementById("email");
+    var input_phone = document.getElementById("phoneNumber");
+    if (input_text.value == "" && input_email.value == "" || input_text.value == "" && input_phone.value == "") {
+        alert ("Please input your Details!");
+        return false;
+    } else {
+        alert (input_text.value+ "\n" +input_email.value+"\n"+input_phone.value);
+        return true;
+    }
+}
+    </script>
+</body>
+</html>
