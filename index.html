@@ -9,6 +9,7 @@
 </head>
 <body>
    <!-- Navbar -->
+<header>
    <div class="navbar">
        <div class="container flex">
            <h1 class="logo">Pro Cleaners</h1>
@@ -17,15 +18,17 @@
            </nav>
        </div>
    </div>
+</header>
    <!-- Banner -->
    <section class="banner">
        <div class="container grid">
            <div class="banner-text">
                <h1>Vancouver's Best <br>Home Cleaners</h1>
-               <p>ProCleaning is Vancouver's best cleaning service. For the quality maid service Vancouver relies on, book one of our experienced, background professionals to have your home clean in no time</p>
+               <p>ProCleaning is Vancouver's best cleaning service. For the<br>quality maid service Vancouver relies on, book one of our<br>experienced, background professionals to have your<br>home clean in no time</p>
            </div>
            <div class="banner-form card">
                <h2>Request Info & Booking</h2>
+               <p>Fill this form and we'll contact you as soon as we can.</p> 
                <form name="bookingForm" action="#" method="POST" data-netlify="true" onsubmit="return validate();">
                    <div class="bookingForm-control">
                        <input type="text" name="name" placeholder="Your Name" id="fullName" required>
@@ -48,17 +51,17 @@
                <div class="avatar-icon">
                   <i class="fas fa-user fa-3x"></i>
                   <h3>Trusted Professionals</h3>
-                  <p>Our Professionals are experienced, friendly and background-checked</p>
+                  <p>Our Professionals are experienced,<br> friendly and background-checked</p>
                </div>
                <div>
                    <i class="far fa-calendar-alt fa-3x"></i>
                    <h3>Available Everyday</h3>
-                   <p>We're available to serve you 7days per week. We'll work around your schedule</p>
+                   <p>We're available to serve you 7days per<br> week. We'll work around your schedule</p>
                 </div>
                 <div class="dollar-icon">
                     <i class="fas fa-dollar-sign fa-3x"></i>
                     <h3>100% Money Back Guarantee</h3>
-                    <p>If you're not satisfied, we'll refund all of your money. It's a simple a that.</p>
+                    <p>If you're not satisfied, we'll refund all of<br>your money. It's a simple as that.</p>
                 </div>
            </div>
         </div>
@@ -94,7 +97,7 @@
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
                     <i class="fas fa-star star"></i>
-                    <i class="fas fa-star star"></i>
+                    
                 </div>
                                 
         </div>
@@ -103,11 +106,12 @@
    <section>
        <div class="footer">
            <footer>
-               <p>&#169Copyright. Alright Reserved</p>
+               <p>&#169Copyright. All right Reserved</p>
            </footer>
 
        </div>
    </section>
+
     <script>
         function validate() {
     var input_text = document.getElementById("fullName");
